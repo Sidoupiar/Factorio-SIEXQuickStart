@@ -54,7 +54,7 @@ return
 				table.insert( SIEXQS.giftListStart , { "express-underground-belt" , 250 } )
 				table.insert( SIEXQS.giftListStart , { "express-splitter" , 100 } )
 			elseif level == 5 then
-				table.insert( SIEXQS.giftListStart , { "electricity-energy-interface" , 10 } )
+				table.insert( SIEXQS.giftListStart , { "electric-energy-interface" , 10 } )
 				table.insert( SIEXQS.giftListStart , { "substation" , 200 } )
 				table.insert( SIEXQS.giftListStart , { "assembling-machine-3" , 100 } )
 				table.insert( SIEXQS.giftListStart , { "electric-furnace" , 100 } )
@@ -246,16 +246,16 @@ return
 		end
 		if SIStartup.SIEXQS.give_turret() then
 			if level == 1 then
-				table.insert( SIEXQS.giftListStart , { "wall" , 50 } )
+				table.insert( SIEXQS.giftListStart , { "stone-wall" , 50 } )
 				table.insert( SIEXQS.giftListStart , { "gun-turret" , 10 } )
 			elseif level == 2 then
-				table.insert( SIEXQS.giftListStart , { "wall" , 100 } )
+				table.insert( SIEXQS.giftListStart , { "stone-wall" , 100 } )
 				table.insert( SIEXQS.giftListStart , { "gun-turret" , 25 } )
 			elseif level == 3 then
-				table.insert( SIEXQS.giftListStart , { "wall" , 200 } )
+				table.insert( SIEXQS.giftListStart , { "stone-wall" , 200 } )
 				table.insert( SIEXQS.giftListStart , { "laser-turret" , 50 } )
 			elseif level == 4 or level == 5 then
-				table.insert( SIEXQS.giftListStart , { "wall" , 500 } )
+				table.insert( SIEXQS.giftListStart , { "stone-wall" , 500 } )
 				table.insert( SIEXQS.giftListStart , { "laser-turret" , 100 } )
 				table.insert( SIEXQS.giftListStart , { "artillery-turret" , 3 } )
 				table.insert( SIEXQS.giftListStart , { "artillery-shell" , 50 } )

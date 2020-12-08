@@ -10,10 +10,11 @@ SIGen
 .NewSubGroup( "gift-items" )
 
 for i = 1 , SIEXQS.chestCount , 1 do
-	SIGen.NewContainer( "wooden-chest-"..i )
-	.AddFlags{ SIFlags.itemFlags.hidden }
+	SIGen.NewContainerLogic( "wooden-chest-"..i , nil , SITypes.logisticMode.passive )
+	.AddFlags{ SIFlags.entityFlags.hidden }
 	.SetProperties( 1 , 1 , 10000 , nil , nil , nil , 99 )
 	.SetCorpse( "wooden-chest-remnants" , "nuke-explosion" )
+	.SetRender_notInNetworkIcon( false )
 end
 
 SIGen.Finish()
