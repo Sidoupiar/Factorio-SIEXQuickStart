@@ -50,7 +50,7 @@ function CreateChest( player )
 end
 
 function CreateGift( player , gifts )
-	if not gifts then return end
+	if not gifts or #gifts < 1 then return end
 	local chest , inventory = CreateChest( player )
 	for i , gift in pairs( gifts ) do
 		local name = gift[1]
