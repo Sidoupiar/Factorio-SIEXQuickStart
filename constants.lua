@@ -3,8 +3,9 @@ local data =
 	name = "siexqs" ,
 	settings =
 	{
-		gift_start = { "bool" , "startup" , true } ,
-		gift_restart = { "bool" , "startup" , true } ,
+		gift_start = { "bool" , "runtime-global" , true } ,
+		gift_restart = { "bool" , "runtime-global" , true } ,
+		
 		gift_level = { "string" , "startup" , "poor" , nil , nil , { "poor" , "medium" , "rich" , "master" , "debug" } } ,
 		
 		give_machine = { "bool" , "startup" , true } ,

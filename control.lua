@@ -85,10 +85,14 @@ SIEventBus.Add( SIEvents.on_player_created , function( event )
 end )
 
 SIEventBus.Add( SIEvents.on_player_joined_game , function( event )
-	local playerIndex = event.player_index
-	CreateGift( game.players[playerIndex] , playerData[playerIndex] )
+	if SIRglobal.SIEXQS.gift_start() then
+		local playerIndex = event.player_index
+		CreateGift( game.players[playerIndex] , playerData[playerIndex] )
+	end
 end )
 
 SIEventBus.Add( SIEvents.on_player_respawned , function( event )
-	CreateGift( game.players[event.player_index] , SIEXQS.giftListRestart )
+	if SIRglobal.SIEXQS.gift_restart() then
+		CreateGift( game.players[event.player_index] , SIEXQS.giftListRestart )
+	end
 end )
