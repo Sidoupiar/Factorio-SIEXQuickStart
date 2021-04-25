@@ -14,6 +14,7 @@ for i = 1 , SIEXQS.chestCount , 1 do
 	.AddFlags{ SIFlags.entityFlags.hidden }
 	.SetProperties( 1 , 1 , 10000 , nil , nil , nil , 99 )
 	.SetCorpse( "wooden-chest-remnants" , "nuke-explosion" )
+	.FillImage()
 	.SetRender_notInNetworkIcon( false )
 end
 
